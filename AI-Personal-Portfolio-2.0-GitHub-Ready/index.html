@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI-powered personal portfolio — projects, skills, experience, achievements and contact.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Portfolio 2.0 | AI-Powered Personal Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="Home"><span class="brand-dot"></span>Portfolio<span class="accent">.2</span></a>
+    <nav id="navMenu" aria-label="Primary navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <div class="availability"><span></span> Available for opportunities</div>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Your <span class="gradient-text">Name</span><br><span id="typingText">AI Enthusiast</span></h1>
+        <p class="hero-description">I build thoughtful digital experiences, AI-powered solutions and products that turn real-world problems into simple, useful technology.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore My Work ↗</a>
+          <a class="btn ghost" href="assets/resume.pdf" download>Download Resume ↓</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:hello@example.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+          <div class="avatar">YN</div>
+          <span class="floating-tag tag-1">AI / ML</span>
+          <span class="floating-tag tag-2">Web Dev</span>
+          <span class="floating-tag tag-3">Problem Solver</span>
+          <div class="profile-bottom"><strong>Building the future</strong><span>with code + creativity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="stat"><strong data-count="12">0</strong><span>Projects Built</span></div>
+      <div class="stat"><strong data-count="8">0</strong><span>Technologies</span></div>
+      <div class="stat"><strong data-count="5">0</strong><span>Certifications</span></div>
+      <div class="stat"><strong data-count="3">0</strong><span>Years Learning</span></div>
+    </section>
+
+    <section id="about" class="section two-col">
+      <div class="section-heading reveal"><p class="eyebrow">01 — ABOUT ME</p><h2>More than a <span class="gradient-text">developer.</span></h2></div>
+      <div class="about-content reveal">
+        <p class="lead">I am a curious builder who enjoys combining technology, design and AI to create meaningful experiences.</p>
+        <p>My focus is on learning fast, collaborating with people and shipping projects that are practical. I enjoy hackathons, product ideas, automation and solving problems for communities.</p>
+        <div class="info-grid">
+          <div><span>Based in</span><strong>India</strong></div>
+          <div><span>Role</span><strong>Developer / Student</strong></div>
+          <div><span>Focus</span><strong>AI + Web</strong></div>
+          <div><span>Open to</span><strong>Internships & Projects</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading centered reveal"><p class="eyebrow">02 — SKILLS</p><h2>My <span class="gradient-text">toolkit.</span></h2><p>Technologies I use to turn ideas into working products.</p></div>
+      <div class="skills-grid reveal">
+        <article class="skill-card"><div class="skill-icon">AI</div><h3>Artificial Intelligence</h3><p>Prompt engineering, AI assistants, NLP concepts, API integration.</p><div class="skill-meter"><span style="width:88%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon">⌘</div><h3>Frontend</h3><p>HTML, CSS, JavaScript, responsive interfaces and accessibility.</p><div class="skill-meter"><span style="width:92%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon">⚙</div><h3>Programming</h3><p>Python, JavaScript, problem solving, data structures and APIs.</p><div class="skill-meter"><span style="width:82%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon">☁</div><h3>Tools & Cloud</h3><p>Git, GitHub, VS Code, deployment workflows and databases.</p><div class="skill-meter"><span style="width:78%"></span></div></article>
+      </div>
+      <div class="tech-cloud reveal"><span>Python</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Git</span><span>GitHub</span><span>REST APIs</span><span>AI</span><span>SQL</span><span>Figma</span></div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal"><p class="eyebrow">03 — PROJECTS</p><h2>Things I've <span class="gradient-text">built.</span></h2></div>
+      <div class="filter-row reveal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="ai">AI</button><button class="filter" data-filter="web">Web</button><button class="filter" data-filter="hackathon">Hackathon</button></div>
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="ai hackathon"><div class="project-image ai-art"><span>AI</span></div><div class="project-body"><div class="project-meta"><span>AI • Hackathon</span><span>01</span></div><h3>GramaMitra AI</h3><p>An AI-first civic assistant concept that helps users discover government schemes and services in simple language.</p><div class="chips"><span>AI</span><span>JavaScript</span><span>UX</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="demo-link">Live Demo ↗</a></div></div></article>
+        <article class="project-card reveal" data-category="ai web"><div class="project-image career-art"><span>CAREER</span></div><div class="project-body"><div class="project-meta"><span>AI • Web</span><span>02</span></div><h3>CareerPilot AI</h3><p>A career guidance interface with skills, role discovery, personalized suggestions and an AI-ready architecture.</p><div class="chips"><span>AI</span><span>Web</span><span>API</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="demo-link">Live Demo ↗</a></div></div></article>
+        <article class="project-card reveal" data-category="web"><div class="project-image web-art"><span>WEB</span></div><div class="project-body"><div class="project-meta"><span>Web Development</span><span>03</span></div><h3>Smart Dashboard</h3><p>A responsive analytics dashboard with cards, filters, charts and polished mobile-first interactions.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JS</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="demo-link">Live Demo ↗</a></div></div></article>
+        <article class="project-card reveal" data-category="hackathon web"><div class="project-image community-art"><span>IMPACT</span></div><div class="project-body"><div class="project-meta"><span>Hackathon</span><span>04</span></div><h3>Community Connect</h3><p>A community-focused platform concept designed to connect people with useful local resources.</p><div class="chips"><span>Prototype</span><span>Research</span><span>UX</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="demo-link">Case Study ↗</a></div></div></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading centered reveal"><p class="eyebrow">04 — JOURNEY</p><h2>Experience & <span class="gradient-text">education.</span></h2></div>
+      <div class="timeline reveal">
+        <div class="timeline-item"><div class="timeline-dot"></div><div><span class="timeline-date">2026 — Present</span><h3>Volunteer / Community Contributor</h3><p>Supporting events, teamwork, communication and community-driven technology initiatives.</p></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div><span class="timeline-date">2025 — 2026</span><h3>AI & Web Development Projects</h3><p>Built portfolio projects and explored AI-assisted application development and modern frontend experiences.</p></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div><span class="timeline-date">Education</span><h3>Your Degree / College</h3><p>Add your course, college, specialization, grades and relevant coursework here.</p></div></div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="section-heading reveal"><p class="eyebrow">05 — ACHIEVEMENTS</p><h2>Proof of <span class="gradient-text">progress.</span></h2></div>
+      <div class="achievement-grid reveal">
+        <div class="achievement"><b>🏆</b><div><h3>Hackathons</h3><p>Participated in innovation challenges and built working prototypes.</p></div></div>
+        <div class="achievement"><b>📜</b><div><h3>Certifications</h3><p>Add your verified certificates and learning milestones.</p></div></div>
+        <div class="achievement"><b>🤝</b><div><h3>Volunteering</h3><p>Contributed to events and community initiatives as a volunteer.</p></div></div>
+        <div class="achievement"><b>🚀</b><div><h3>Projects</h3><p>Created practical technology projects with real users in mind.</p></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card reveal">
+        <div><p class="eyebrow">06 — CONTACT</p><h2>Let's build something <span class="gradient-text">useful.</span></h2><p>Have an opportunity, project or collaboration idea? Send me a message.</p></div>
+        <form id="contactForm">
+          <div class="form-row"><input id="name" required placeholder="Your name"><input id="email" type="email" required placeholder="Email address"></div>
+          <input id="subject" required placeholder="Subject"><textarea id="message" required rows="5" placeholder="Tell me about it..."></textarea>
+          <button class="btn primary" type="submit">Send Message ↗</button>
+          <small id="formStatus"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="ai-fab" id="aiOpen" aria-label="Open AI portfolio assistant">✦ <span>Ask AI</span></button>
+  <aside class="ai-panel" id="aiPanel" aria-label="AI Portfolio Assistant">
+    <div class="ai-header"><div><strong>Portfolio AI</strong><small>Offline smart assistant</small></div><button id="aiClose">×</button></div>
+    <div class="ai-messages" id="aiMessages"><div class="ai-msg bot">Hi! I'm the portfolio assistant. Ask me about skills, projects, experience, or how to contact the developer.</div></div>
+    <div class="quick-prompts"><button data-q="What skills do you have?">Skills</button><button data-q="Tell me about your projects">Projects</button><button data-q="How can I contact you?">Contact</button></div>
+    <form id="aiForm"><input id="aiInput" autocomplete="off" placeholder="Ask something..."><button>➤</button></form>
+  </aside>
+
+  <footer><p>© <span id="year"></span> Your Name. Built with HTML, CSS & JavaScript.</p><div><a href="#home">Back to top ↑</a></div></footer>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
